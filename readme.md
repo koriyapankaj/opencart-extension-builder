@@ -23,7 +23,39 @@ Follow the steps below to install and use the OpenCart Extension Builder.
 Clone the repository to your local machine:
 
 ```bash
-git clone <your-repository-url> opencart-extension-builder
+git clone https://github.com/koriyapankaj/opencart-extension-builder.git
 cd opencart-extension-builder
 ```
+
+### Step 2: Install dependencies
+
+Use Composer to install the required dependencies:
+
+```bash
+composer install
+```
+
+
+### Step 3: Run the application
+
+You can now run the OpenCart Extension Builder using the following command:
+
+```bash
+php main.php build
+```
+
+# This will start the interactive prompt where you can input the following details:
+
+- Extension Name: The name of the extension (required).
+- Extension Directory Name: The directory name for the extension.
+- Extension Description: A description of the extension (required).
+- Version: The version of your extension.
+- Author: The name of the extension author (required).
+- Link: The link to the extension's homepage or repository (required).
+- OpenCart Version: Choose between "OpenCart 3" or "OpenCart 4".
+
+
+After you provide the required information, the builder will generate a directory structure for your new OpenCart extension inside buld directory.
+
+
 
