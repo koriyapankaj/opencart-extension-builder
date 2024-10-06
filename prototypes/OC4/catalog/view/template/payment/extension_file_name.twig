@@ -6,7 +6,7 @@ $('#button-confirm').on('click', function() {
     var element = this;
 
     $.ajax({
-        url: 'index.php?route=extension/opencart/payment/{{s_extension_name}}.confirm&language={{ language }}',
+        url: 'index.php?route=extension/{{s_extension_name}}/payment/{{s_extension_name}}.confirm&language={{ language }}',
         dataType: 'json',
         beforeSend: function() {
             $(element).button('loading');
