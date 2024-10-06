@@ -1,0 +1,4 @@
+# Ignore Composer dependencies
+/vendor/
+/composer.lock
+/build
